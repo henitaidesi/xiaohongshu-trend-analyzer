@@ -51,7 +51,6 @@ export default defineConfig({
     minify: 'terser',
     // 代码分割
     rollupOptions: {
-      input: 'public/index.html',
       output: {
         manualChunks: {
           // 第三方库分离
