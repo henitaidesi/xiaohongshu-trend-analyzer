@@ -421,8 +421,14 @@ const HotTopics: React.FC = () => {
       </Row>
 
       {/* 主要内容 */}
-      <Tabs defaultActiveKey="list" size="large">
-        <TabPane tab="话题列表" key="list">
+      <Tabs
+        defaultActiveKey="list"
+        size="large"
+        items={[
+          {
+            key: 'list',
+            label: '话题列表',
+            children: (
           {/* 搜索和过滤 */}
           <Card style={{ marginBottom: '16px' }}>
             <Row gutter={16} align="middle">
@@ -506,14 +512,19 @@ const HotTopics: React.FC = () => {
               }}
             />
           </Card>
-        </TabPane>
-
-        <TabPane tab="趋势分析" key="trend">
-          <Card title="趋势分析" style={{ textAlign: 'center', padding: '40px' }}>
-            <Text type="secondary">图表功能开发中，敬请期待...</Text>
-          </Card>
-        </TabPane>
-      </Tabs>
+            )
+          },
+          {
+            key: 'trend',
+            label: '趋势分析',
+            children: (
+              <Card title="趋势分析" style={{ textAlign: 'center', padding: '40px' }}>
+                <Text type="secondary">图表功能开发中，敬请期待...</Text>
+              </Card>
+            )
+          }
+        ]}
+      />
     </div>
   );
 };
