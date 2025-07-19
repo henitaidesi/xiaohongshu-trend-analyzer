@@ -182,7 +182,7 @@ class SimpleDataService {
       // 直接尝试加载最大的数据文件
       try {
         console.log('🔄 直接加载超大规模数据文件...');
-        const response = await fetch('/data/ultra_mass_notes_20250718_200337.json');
+        const response = await fetch('/data/processed/xiaohongshu_notes_53k.json');
 
         if (response.ok) {
           const data = await response.json();
