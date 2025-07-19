@@ -5,7 +5,7 @@ import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/xiaohongshu-trend-analyzer/',
+  base: process.env.NODE_ENV === 'production' ? '/xiaohongshu-trend-analyzer/' : '/',
 
   // ESBuild 配置 - 忽略 TypeScript 错误
   esbuild: {
@@ -49,9 +49,9 @@ export default defineConfig({
     assetsDir: 'assets',
     sourcemap: false,
     minify: 'terser',
-    
     // 代码分割
     rollupOptions: {
+      input: 'public/index.html',
       output: {
         manualChunks: {
           // 第三方库分离

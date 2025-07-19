@@ -24,31 +24,57 @@ class SimpleDataService {
   // 获取热门话题数据 - 使用大量真实爬虫数据
   async getHotTopics(limit: number = 20): Promise<RealTopicData[]> {
     try {
-      // 首先尝试加载大量真实爬虫数据
-      console.log('🔍 加载大量真实爬虫数据...');
-      const massRealData = await this.loadMassRealData();
+      // 在生产环境下优先使用API，开发环境优先使用本地文件
+      const isProduction = window.location.hostname.includes('github.io');
 
-      if (massRealData && massRealData.length > 0) {
-        // 按热度排序并返回指定数量
-        const sortedData = massRealData
-          .sort((a, b) => (b.likeCount + b.commentCount * 3 + b.shareCount * 5) - (a.likeCount + a.commentCount * 3 + a.shareCount * 5))
-          .slice(0, limit);
-        return sortedData;
-      }
+      if (isProduction) {
+        // 生产环境：优先使用API
+        console.log('🌐 生产环境：优先使用API获取真实数据...');
+        const isBackendAvailable = await apiService.checkBackendHealth();
 
-      // 如果大量数据不可用，尝试后端API
-      console.log('🔍 检查后端API服务状态...');
-      const isBackendAvailable = await apiService.checkBackendHealth();
+        if (isBackendAvailable) {
+          console.log('✅ 后端服务可用，获取真实数据...');
+          const realTopics = await apiService.getHotTopics(limit);
 
-      if (isBackendAvailable) {
-        console.log('✅ 后端服务可用，获取真实数据...');
-        const realTopics = await apiService.getHotTopics(limit);
+          if (realTopics && realTopics.length > 0) {
+            return this.transformApiDataToTopics(realTopics);
+          }
+        }
 
-        if (realTopics && realTopics.length > 0) {
-          return this.transformApiDataToTopics(realTopics);
+        // API不可用时，尝试加载本地数据文件
+        console.log('🔍 API不可用，尝试加载本地数据文件...');
+        const massRealData = await this.loadMassRealData();
+        if (massRealData && massRealData.length > 0) {
+          const sortedData = massRealData
+            .sort((a, b) => (b.likeCount + b.commentCount * 3 + b.shareCount * 5) - (a.likeCount + a.commentCount * 3 + a.shareCount * 5))
+            .slice(0, limit);
+          return sortedData;
         }
       } else {
-        console.log('⚠️ 后端服务不可用，使用备用数据');
+        // 开发环境：优先使用本地文件
+        console.log('🔍 开发环境：优先加载本地真实数据文件...');
+        const massRealData = await this.loadMassRealData();
+
+        if (massRealData && massRealData.length > 0) {
+          // 按热度排序并返回指定数量
+          const sortedData = massRealData
+            .sort((a, b) => (b.likeCount + b.commentCount * 3 + b.shareCount * 5) - (a.likeCount + a.commentCount * 3 + a.shareCount * 5))
+            .slice(0, limit);
+          return sortedData;
+        }
+
+        // 如果本地数据不可用，尝试后端API
+        console.log('🔍 本地数据不可用，检查后端API服务状态...');
+        const isBackendAvailable = await apiService.checkBackendHealth();
+
+        if (isBackendAvailable) {
+          console.log('✅ 后端服务可用，获取真实数据...');
+          const realTopics = await apiService.getHotTopics(limit);
+
+          if (realTopics && realTopics.length > 0) {
+            return this.transformApiDataToTopics(realTopics);
+          }
+        }
       }
 
     } catch (error) {

@@ -8,6 +8,33 @@ const path = require('path');
 const app = express();
 const PORT = 8000;
 
+// 从53k数据中提取热门话题的函数
+function extractHotTopicsFrom53kData(notes, limit = 20) {
+  // 按点赞数排序，提取最热门的笔记作为话题
+  const sortedNotes = notes
+    .filter(note => note && note.like_count && note.title)
+    .sort((a, b) => (b.like_count || 0) - (a.like_count || 0))
+    .slice(0, limit);
+
+  // 转换为话题格式
+  return sortedNotes.map(note => ({
+    id: note.id || `topic_${Date.now()}_${Math.random()}`,
+    title: note.title,
+    content: note.content || note.title,
+    author: note.author || '匿名用户',
+    publishTime: note.publish_time || note.crawl_time || new Date().toISOString(),
+    likeCount: note.like_count || 0,
+    commentCount: note.comment_count || 0,
+    shareCount: note.share_count || 0,
+    viewCount: note.view_count || 0,
+    tags: note.tags || [],
+    category: note.category || '生活',
+    images: note.images || [],
+    sentiment: note.sentiment || 'neutral',
+    trendScore: Math.min(100, Math.max(0, (note.like_count || 0) / 1000))
+  }));
+}
+
 // 中间件
 app.use(cors());
 app.use(express.json());
@@ -101,11 +128,15 @@ app.get('/api/topics/hot', async (req, res) => {
           let dataFile = null;
           let dataSource = 'unknown';
 
-          // 按优先级查找数据文件
+          // 按优先级查找数据文件 - 优先使用53k真实数据
+          const data53kFile = path.join(__dirname, '..', 'data', 'processed', 'xiaohongshu_notes_53k.json');
           const enhancedDataFile = path.join(__dirname, '..', 'data', 'enhanced_real_notes.json');
           const enhancedTopicsFile = path.join(__dirname, '..', 'data', 'enhanced_hot_topics.json');
 
-          if (fs.existsSync(enhancedTopicsFile)) {
+          if (fs.existsSync(data53kFile)) {
+            dataFile = data53kFile;
+            dataSource = '53k_real_crawler_data';
+          } else if (fs.existsSync(enhancedTopicsFile)) {
             dataFile = enhancedTopicsFile;
             dataSource = 'enhanced_real_crawler';
           } else if (fs.existsSync(enhancedDataFile)) {
@@ -124,11 +155,19 @@ app.get('/api/topics/hot', async (req, res) => {
 
           if (dataFile) {
             const data = JSON.parse(fs.readFileSync(dataFile, 'utf8'));
-            console.log(`✅ 成功获取 ${data.length} 条真实话题数据 (来源: ${dataSource})`);
+            console.log(`✅ 成功获取 ${data.length} 条真实数据 (来源: ${dataSource})`);
+
+            // 如果是53k数据，需要转换格式并提取热门话题
+            let processedData = data;
+            if (dataSource === '53k_real_crawler_data') {
+              // 从53k笔记数据中提取热门话题
+              processedData = extractHotTopicsFrom53kData(data, limit);
+              console.log(`📊 从53k数据中提取了 ${processedData.length} 个热门话题`);
+            }
 
             res.json({
               success: true,
-              data: data.slice(0, limit),
+              data: processedData.slice(0, limit),
               source: dataSource,
               timestamp: new Date().toISOString()
             });

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小红书趋势分析系统</title>
+    <meta name="description" content="智能新媒体计算综合设计 - 小红书创作趋势分析平台" />
+    <meta name="keywords" content="小红书,趋势分析,数据可视化,内容创作,AI助手" />
+    <meta name="author" content="智能新媒体计算综合设计项目组" />
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- 样式预加载 -->
+    <style>
+      /* 加载动画 */
+      #loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+      }
+      
+      .loading-content {
+        text-align: center;
+        color: white;
+      }
+      
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        border-top-color: white;
+        animation: spin 1s ease-in-out infinite;
+        margin: 0 auto 20px;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      .loading-text {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      
+      .loading-subtitle {
+        font-size: 14px;
+        opacity: 0.8;
+      }
+      
+      /* 防止闪烁 */
+      #root {
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 加载动画 -->
+    <div id="loading">
+      <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">小红书趋势分析系统</div>
+        <div class="loading-subtitle">正在加载中...</div>
+      </div>
+    </div>
+    
+    <!-- React 应用挂载点 -->
+    <div id="root"></div>
+    
+    <!-- 开发模式脚本 -->
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- 错误处理 -->
+    <script>
+      // 隐藏加载动画
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          const loading = document.getElementById('loading');
+          if (loading) {
+            loading.style.opacity = '0';
+            setTimeout(() => {
+              loading.style.display = 'none';
+            }, 500);
+          }
+        }, 1000);
+      });
+      
+      // 全局错误处理
+      window.addEventListener('error', (e) => {
+        console.error('全局错误:', e.error);
+      });
+      
+      window.addEventListener('unhandledrejection', (e) => {
+        console.error('未处理的 Promise 错误:', e.reason);
+      });
+    </script>
+  </body>
+</html>
