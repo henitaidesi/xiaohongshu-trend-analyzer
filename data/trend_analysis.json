@@ -1,0 +1,60 @@
+{
+  "trend_data": [
+    {
+      "date": "2025-07-15",
+      "post_count": 2,
+      "avg_likes": 1349,
+      "avg_comments": 241
+    },
+    {
+      "date": "2025-07-16",
+      "post_count": 8,
+      "avg_likes": 1272,
+      "avg_comments": 136
+    },
+    {
+      "date": "2025-07-17",
+      "post_count": 7,
+      "avg_likes": 1096,
+      "avg_comments": 174
+    },
+    {
+      "date": "2025-07-18",
+      "post_count": 3,
+      "avg_likes": 1147,
+      "avg_comments": 131
+    }
+  ],
+  "category_trends": {
+    "健身": {
+      "count": 2,
+      "avg_score": 86
+    },
+    "美食": {
+      "count": 5,
+      "avg_score": 79
+    },
+    "旅行": {
+      "count": 4,
+      "avg_score": 75
+    },
+    "家居": {
+      "count": 4,
+      "avg_score": 70
+    },
+    "护肤": {
+      "count": 2,
+      "avg_score": 71
+    },
+    "数码": {
+      "count": 2,
+      "avg_score": 67
+    },
+    "美妆": {
+      "count": 1,
+      "avg_score": 62
+    }
+  },
+  "total_posts": 20,
+  "analysis_time": "2025-07-18T11:56:54.097147"
+}

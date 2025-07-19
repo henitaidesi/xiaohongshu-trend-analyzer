@@ -1,0 +1,36 @@
+{
+  "sentiment_analysis": {
+    "positive": 65,
+    "neutral": 25,
+    "negative": 10
+  },
+  "trend_prediction": [
+    {
+      "topic": "夏日护肤",
+      "predicted_growth": "+25%",
+      "confidence": 0.85
+    },
+    {
+      "topic": "职场穿搭",
+      "predicted_growth": "+18%",
+      "confidence": 0.78
+    },
+    {
+      "topic": "健康减肥",
+      "predicted_growth": "+12%",
+      "confidence": 0.72
+    }
+  ],
+  "content_insights": {
+    "avg_engagement_rate": 8.5,
+    "best_posting_time": "10:00-12:00",
+    "popular_hashtags": [
+      "#夏日",
+      "#护肤",
+      "#穿搭",
+      "#减肥",
+      "#健康"
+    ]
+  },
+  "generated_at": "2025-07-18T11:55:15.255937"
+}

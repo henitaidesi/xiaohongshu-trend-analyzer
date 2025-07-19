@@ -1,0 +1,21 @@
+{
+  "default": {
+    "cookie_string": "abRequestId=e343abd3-2594-5536-a302-3af232acb144; webBuild=4.72.0; xsecappid=xhs-pc-web; a1=1981b76a9fdkgmhyry1rj6edqe1vsimh2x8s52lza50000393012; webId=eec19781354ccdfa7ae8161e6461d946; gid=yjYyDWKS4qJ0yjYyDWK0jCJ1ifTk6xvFvyFVYu0KdfAdyM28hM36x2888qjq8yJ8jjj880yj; web_session=040069b90df4b528677271f04c3a4b472dcb8f; loadts=1752807694564; unread={%22ub%22:%226870d77f000000001d00fdd0%22%2C%22ue%22:%226867ba22000000001c032888%22%2C%22uc%22:28}; websectiga=10f9a40ba454a07755a08f27ef8194c53637eba4551cf9751c009d9afb564467; sec_poison_id=4e01a92d-c901-441e-8caa-78836e50dcfe",
+    "cookie_dict": {
+      "abRequestId": "e343abd3-2594-5536-a302-3af232acb144",
+      "webBuild": "4.72.0",
+      "xsecappid": "xhs-pc-web",
+      "a1": "1981b76a9fdkgmhyry1rj6edqe1vsimh2x8s52lza50000393012",
+      "webId": "eec19781354ccdfa7ae8161e6461d946",
+      "gid": "yjYyDWKS4qJ0yjYyDWK0jCJ1ifTk6xvFvyFVYu0KdfAdyM28hM36x2888qjq8yJ8jjj880yj",
+      "web_session": "040069b90df4b528677271f04c3a4b472dcb8f",
+      "loadts": "1752807694564",
+      "unread": "{%22ub%22:%226870d77f000000001d00fdd0%22%2C%22ue%22:%226867ba22000000001c032888%22%2C%22uc%22:28}",
+      "websectiga": "10f9a40ba454a07755a08f27ef8194c53637eba4551cf9751c009d9afb564467",
+      "sec_poison_id": "4e01a92d-c901-441e-8caa-78836e50dcfe"
+    },
+    "created_at": "2025-07-18T11:11:30.208283",
+    "last_used": "2025-07-18T11:11:50.743517",
+    "is_valid": true
+  }
+}

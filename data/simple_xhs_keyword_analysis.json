@@ -1,0 +1,97 @@
+{
+  "美妆": {
+    "count": 6,
+    "total_likes": 10447,
+    "total_comments": 1092,
+    "total_shares": 426,
+    "avg_likes": 1741.2,
+    "avg_comments": 182.0,
+    "avg_engagement": 14.53,
+    "quality_scores": [
+      7.618868476858239,
+      8.264450447836236,
+      8.012218137989091,
+      7.919578574408756,
+      9.26355941062884,
+      9.665786934386329
+    ],
+    "avg_shares": 71.0,
+    "avg_quality": 8.46
+  },
+  "护肤": {
+    "count": 6,
+    "total_likes": 7016,
+    "total_comments": 721,
+    "total_shares": 274,
+    "avg_likes": 1169.3,
+    "avg_comments": 120.2,
+    "avg_engagement": 14.18,
+    "quality_scores": [
+      7.84542320490538,
+      8.769187458751453,
+      8.15425954688887,
+      9.449279949743122,
+      8.965023478548403,
+      7.876076480700393
+    ],
+    "avg_shares": 45.7,
+    "avg_quality": 8.51
+  },
+  "穿搭": {
+    "count": 6,
+    "total_likes": 7707,
+    "total_comments": 673,
+    "total_shares": 261,
+    "avg_likes": 1284.5,
+    "avg_comments": 112.2,
+    "avg_engagement": 12.12,
+    "quality_scores": [
+      8.829881355227691,
+      9.794133525731088,
+      8.52576829666942,
+      7.602063905050725,
+      8.217527623683145,
+      9.084507081755541
+    ],
+    "avg_shares": 43.5,
+    "avg_quality": 8.68
+  },
+  "美食": {
+    "count": 6,
+    "total_likes": 8379,
+    "total_comments": 908,
+    "total_shares": 293,
+    "avg_likes": 1396.5,
+    "avg_comments": 151.3,
+    "avg_engagement": 14.33,
+    "quality_scores": [
+      8.200935093298575,
+      8.223503851442086,
+      9.781434926980342,
+      9.185643824670336,
+      8.614086917388043,
+      8.444914102665871
+    ],
+    "avg_shares": 48.8,
+    "avg_quality": 8.74
+  },
+  "旅行": {
+    "count": 6,
+    "total_likes": 4329,
+    "total_comments": 340,
+    "total_shares": 126,
+    "avg_likes": 721.5,
+    "avg_comments": 56.7,
+    "avg_engagement": 10.76,
+    "quality_scores": [
+      9.319369540882848,
+      9.269862527968845,
+      8.675909184829711,
+      7.68899307695697,
+      8.264918546602589,
+      8.719291612261683
+    ],
+    "avg_shares": 21.0,
+    "avg_quality": 8.66
+  }
+}

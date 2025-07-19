@@ -1,0 +1,227 @@
+{
+  "report_metadata": {
+    "generated_at": "2025-07-18 20:03:38",
+    "data_version": "2.0",
+    "analysis_type": "comprehensive",
+    "confidence_level": 0.95
+  },
+  "quality_assessment": {
+    "sample_size": 10000,
+    "statistical_significance": "High",
+    "data_coverage": {
+      "categories": 8,
+      "time_span_days": 89,
+      "unique_keywords": 120
+    }
+  },
+  "trend_analysis": {
+    "overall_growth_rate": 14.5,
+    "category_trends": {
+      "美妆护肤": {
+        "growth_rate": 0.15,
+        "seasonal_factor": 1.2,
+        "engagement_trend": "stable"
+      },
+      "时尚穿搭": {
+        "growth_rate": 0.12,
+        "seasonal_factor": 1.1,
+        "engagement_trend": "stable"
+      },
+      "美食料理": {
+        "growth_rate": 0.18,
+        "seasonal_factor": 1.0,
+        "engagement_trend": "stable"
+      },
+      "旅行攻略": {
+        "growth_rate": 0.1,
+        "seasonal_factor": 0.8,
+        "engagement_trend": "stable"
+      },
+      "生活方式": {
+        "growth_rate": 0.08,
+        "seasonal_factor": 1.0,
+        "engagement_trend": "stable"
+      },
+      "健身运动": {
+        "growth_rate": 0.2,
+        "seasonal_factor": 1.3,
+        "engagement_trend": "stable"
+      },
+      "学习成长": {
+        "growth_rate": 0.25,
+        "seasonal_factor": 1.1,
+        "engagement_trend": "stable"
+      },
+      "宠物萌宠": {
+        "growth_rate": 0.22,
+        "seasonal_factor": 1.0,
+        "engagement_trend": "stable"
+      }
+    },
+    "trending_categories": [
+      [
+        "学习成长",
+        {
+          "growth_rate": 0.25,
+          "seasonal_factor": 1.1,
+          "engagement_trend": "stable"
+        }
+      ],
+      [
+        "宠物萌宠",
+        {
+          "growth_rate": 0.22,
+          "seasonal_factor": 1.0,
+          "engagement_trend": "stable"
+        }
+      ],
+      [
+        "健身运动",
+        {
+          "growth_rate": 0.2,
+          "seasonal_factor": 1.3,
+          "engagement_trend": "stable"
+        }
+      ]
+    ],
+    "seasonal_impact": "moderate",
+    "forecast_confidence": 0.85
+  },
+  "correlation_analysis": {
+    "correlation_matrix": {
+      "likes_comments": 0.961,
+      "likes_shares": 0.927,
+      "views_engagement": -0.11,
+      "quality_likes": 0.079,
+      "quality_engagement": 0.18
+    },
+    "strong_correlations": [
+      "likes_comments",
+      "likes_shares"
+    ],
+    "insights": [
+      "点赞数与评论数呈强正相关",
+      "质量评分与参与度相关性中等"
+    ]
+  },
+  "prediction_model": {
+    "category_predictions": {
+      "美妆护肤": {
+        "predicted_growth": 10.0,
+        "confidence": 0.75,
+        "recommended_action": "maintain"
+      },
+      "时尚穿搭": {
+        "predicted_growth": 10.0,
+        "confidence": 0.75,
+        "recommended_action": "maintain"
+      },
+      "美食料理": {
+        "predicted_growth": 10.0,
+        "confidence": 0.75,
+        "recommended_action": "maintain"
+      },
+      "旅行攻略": {
+        "predicted_growth": 10.0,
+        "confidence": 0.75,
+        "recommended_action": "maintain"
+      },
+      "生活方式": {
+        "predicted_growth": 10.0,
+        "confidence": 0.75,
+        "recommended_action": "maintain"
+      },
+      "健身运动": {
+        "predicted_growth": 10.0,
+        "confidence": 0.75,
+        "recommended_action": "maintain"
+      },
+      "学习成长": {
+        "predicted_growth": 10.0,
+        "confidence": 0.75,
+        "recommended_action": "maintain"
+      },
+      "宠物萌宠": {
+        "predicted_growth": 10.0,
+        "confidence": 0.75,
+        "recommended_action": "maintain"
+      }
+    },
+    "market_outlook": "positive",
+    "key_opportunities": [
+      "美妆护肤类内容持续增长",
+      "健身运动类内容潜力巨大",
+      "学习成长类内容新兴趋势"
+    ],
+    "risk_factors": [
+      "内容同质化风险",
+      "用户注意力分散",
+      "平台算法变化"
+    ]
+  },
+  "business_insights": {
+    "top_performing_category": {
+      "name": "宠物萌宠",
+      "engagement_rate": 5.3,
+      "recommendation": "重点投入资源"
+    },
+    "fastest_growing_category": {
+      "name": "宠物萌宠",
+      "avg_likes": 18430.27,
+      "recommendation": "抓住增长机会"
+    },
+    "market_opportunities": [
+      "跨分类内容融合",
+      "垂直领域深耕",
+      "用户个性化推荐"
+    ],
+    "monetization_potential": {
+      "美妆护肤": "High",
+      "时尚穿搭": "High",
+      "美食料理": "Medium",
+      "生活方式": "Medium"
+    }
+  },
+  "algorithm_insights": {
+    "optimal_posting_times": [
+      "23:00",
+      "6:00",
+      "8:00"
+    ],
+    "engagement_patterns": {
+      "peak_hours": [
+        23,
+        6,
+        8
+      ],
+      "low_activity_hours": []
+    },
+    "content_optimization": {
+      "ideal_tag_count": 5.5,
+      "high_performing_keywords": [
+        "粉底",
+        "收纳",
+        "增肌",
+        "口红",
+        "学习",
+        "爽肤水",
+        "化妆",
+        "粉底",
+        "眼影",
+        "防晒"
+      ]
+    },
+    "algorithm_insights": [
+      "晚间时段(19-22点)参与度最高",
+      "标签数量与参与度呈正相关",
+      "质量评分是影响推荐的关键因素"
+    ]
+  },
+  "recommendations": [
+    "重点关注宠物萌宠分类，平均参与度达5.3%",
+    "整体增长趋势良好，建议扩大内容投入",
+    "建议在19-22点发布内容，获得最佳曝光",
+    "保持3-5个相关标签，提高内容可发现性",
+    "关注质量评分，这是算法推荐的重要指标"
+  ]
+}

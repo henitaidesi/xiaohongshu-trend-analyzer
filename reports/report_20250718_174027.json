@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-07-18T17:40:27.976282",
+  "database_stats": {
+    "total_notes": 50,
+    "total_keywords": 10
+  },
+  "scheduler_stats": {
+    "total_runs": 12,
+    "successful_runs": 12,
+    "failed_runs": 0,
+    "last_run": 

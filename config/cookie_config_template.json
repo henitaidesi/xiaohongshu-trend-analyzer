@@ -1,0 +1,5 @@
+{
+  "cookie": "",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+  "note": "请将从浏览器开发者工具中复制的Cookie字符串粘贴到上面的cookie字段中。获取方法：1. 打开小红书网站 2. 按F12打开开发者工具 3. 在Network标签页中找到任意请求 4. 复制Request Headers中的Cookie值"
+}

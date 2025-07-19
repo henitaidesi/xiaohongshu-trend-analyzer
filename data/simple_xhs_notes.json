@@ -1,0 +1,902 @@
+[
+  {
+    "id": "note_美妆_0_1752830262_8358",
+    "title": "超好用的美妆产品推荐！姐妹们必看",
+    "content": "详细分享关于美妆的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "甜美妆分享家1",
+    "author_id": "user_美妆_0_75959",
+    "publish_time": "2025-07-11T10:24:42.629452",
+    "like_count": 1001,
+    "comment_count": 111,
+    "share_count": 31,
+    "view_count": 23023,
+    "collect_count": 125,
+    "tags": [
+      "美妆",
+      "美妆推荐",
+      "美妆分享",
+      "推荐",
+      "必买"
+    ],
+    "category": "美妆",
+    "images": [
+      "https://picsum.photos/400/600?random=0"
+    ],
+    "location": "广州",
+    "is_video": true,
+    "duration": 24,
+    "engagement_rate": 14.19,
+    "quality_score": 7.618868476858239,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_美妆_1_1752830262_8969",
+    "title": "美妆新手入门指南，从零开始学化妆",
+    "content": "详细分享关于美妆的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "甜美妆博主2",
+    "author_id": "user_美妆_1_88939",
+    "publish_time": "2025-07-18T10:36:42.629547",
+    "like_count": 2269,
+    "comment_count": 174,
+    "share_count": 108,
+    "view_count": 43111,
+    "collect_count": 453,
+    "tags": [
+      "美妆",
+      "美妆推荐",
+      "美妆分享",
+      "实用",
+      "推荐"
+    ],
+    "category": "美妆",
+    "images": [
+      "https://picsum.photos/400/600?random=1"
+    ],
+    "location": "成都",
+    "is_video": true,
+    "duration": 63,
+    "engagement_rate": 12.43,
+    "quality_score": 8.264450447836236,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_美妆_2_1752830262_6093",
+    "title": "美妆新手入门指南，从零开始学化妆",
+    "content": "详细分享关于美妆的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "阳光美妆达人3",
+    "author_id": "user_美妆_2_78316",
+    "publish_time": "2025-07-13T14:53:42.629767",
+    "like_count": 1494,
+    "comment_count": 166,
+    "share_count": 74,
+    "view_count": 46314,
+    "collect_count": 166,
+    "tags": [
+      "美妆",
+      "美妆推荐",
+      "美妆分享",
+      "种草",
+      "好物"
+    ],
+    "category": "美妆",
+    "images": [
+      "https://picsum.photos/400/600?random=2"
+    ],
+    "location": "上海",
+    "is_video": true,
+    "duration": null,
+    "engagement_rate": 16.06,
+    "quality_score": 8.012218137989091,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_美妆_3_1752830262_5865",
+    "title": "高端美妆品牌测评，值得入手吗？",
+    "content": "详细分享关于美妆的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "可爱的美妆分享家4",
+    "author_id": "user_美妆_3_34742",
+    "publish_time": "2025-06-30T19:04:42.629787",
+    "like_count": 2715,
+    "comment_count": 271,
+    "share_count": 82,
+    "view_count": 59730,
+    "collect_count": 271,
+    "tags": [
+      "美妆",
+      "美妆推荐",
+      "美妆分享",
+      "好物",
+      "种草"
+    ],
+    "category": "美妆",
+    "images": [
+      "https://picsum.photos/400/600?random=3"
+    ],
+    "location": "上海",
+    "is_video": true,
+    "duration": 166,
+    "engagement_rate": 13.0,
+    "quality_score": 7.919578574408756,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_美妆_4_1752830262_2680",
+    "title": "平价美妆好物分享，学生党福音",
+    "content": "详细分享关于美妆的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "美美妆分享家5",
+    "author_id": "user_美妆_4_60392",
+    "publish_time": "2025-07-12T09:18:42.629803",
+    "like_count": 2187,
+    "comment_count": 273,
+    "share_count": 99,
+    "view_count": 52488,
+    "collect_count": 218,
+    "tags": [
+      "美妆",
+      "美妆推荐",
+      "美妆分享",
+      "推荐",
+      "必买"
+    ],
+    "category": "美妆",
+    "images": [
+      "https://picsum.photos/400/600?random=4"
+    ],
+    "location": "重庆",
+    "is_video": false,
+    "duration": 170,
+    "engagement_rate": 17.01,
+    "quality_score": 9.26355941062884,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_美妆_5_1752830262_9153",
+    "title": "美妆踩雷避坑指南，这些千万别买",
+    "content": "详细分享关于美妆的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "美美妆宝贝6",
+    "author_id": "user_美妆_5_23561",
+    "publish_time": "2025-07-04T11:55:42.629816",
+    "like_count": 781,
+    "comment_count": 97,
+    "share_count": 32,
+    "view_count": 17963,
+    "collect_count": 130,
+    "tags": [
+      "美妆",
+      "美妆推荐",
+      "美妆分享",
+      "种草",
+      "分享"
+    ],
+    "category": "美妆",
+    "images": [
+      "https://picsum.photos/400/600?random=5"
+    ],
+    "location": "上海",
+    "is_video": true,
+    "duration": null,
+    "engagement_rate": 16.52,
+    "quality_score": 9.665786934386329,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_护肤_0_1752830263_8968",
+    "title": "护肤平价替代清单，大牌同款效果",
+    "content": "详细分享关于护肤的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "爱护肤分享家1",
+    "author_id": "user_护肤_0_48727",
+    "publish_time": "2025-07-07T16:16:43.277639",
+    "like_count": 128,
+    "comment_count": 12,
+    "share_count": 5,
+    "view_count": 2176,
+    "collect_count": 16,
+    "tags": [
+      "护肤",
+      "护肤推荐",
+      "护肤分享",
+      "种草",
+      "实用"
+    ],
+    "category": "护肤",
+    "images": [
+      "https://picsum.photos/400/600?random=0"
+    ],
+    "location": "成都",
+    "is_video": false,
+    "duration": null,
+    "engagement_rate": 13.28,
+    "quality_score": 7.84542320490538,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_护肤_1_1752830263_2277",
+    "title": "护肤晚间护理步骤，让你睡出好皮肤",
+    "content": "详细分享关于护肤的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "美护肤达人2",
+    "author_id": "user_护肤_1_13503",
+    "publish_time": "2025-06-30T12:37:43.277712",
+    "like_count": 1053,
+    "comment_count": 117,
+    "share_count": 26,
+    "view_count": 18954,
+    "collect_count": 175,
+    "tags": [
+      "护肤",
+      "护肤推荐",
+      "护肤分享",
+      "分享",
+      "种草"
+    ],
+    "category": "护肤",
+    "images": [
+      "https://picsum.photos/400/600?random=1"
+    ],
+    "location": "上海",
+    "is_video": true,
+    "duration": 138,
+    "engagement_rate": 13.58,
+    "quality_score": 8.769187458751453,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_护肤_2_1752830263_7215",
+    "title": "护肤晚间护理步骤，让你睡出好皮肤",
+    "content": "详细分享关于护肤的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "爱护肤小姐姐3",
+    "author_id": "user_护肤_2_17006",
+    "publish_time": "2025-06-28T11:37:43.277730",
+    "like_count": 1310,
+    "comment_count": 145,
+    "share_count": 62,
+    "view_count": 20960,
+    "collect_count": 163,
+    "tags": [
+      "护肤",
+      "护肤推荐",
+      "护肤分享",
+      "分享",
+      "必买"
+    ],
+    "category": "护肤",
+    "images": [
+      "https://picsum.photos/400/600?random=2"
+    ],
+    "location": "北京",
+    "is_video": false,
+    "duration": 175,
+    "engagement_rate": 15.8,
+    "quality_score": 8.15425954688887,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_护肤_3_1752830263_3773",
+    "title": "换季护肤攻略，告别干燥起皮",
+    "content": "详细分享关于护肤的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "小护肤达人4",
+    "author_id": "user_护肤_3_43250",
+    "publish_time": "2025-07-01T05:54:43.277744",
+    "like_count": 1173,
+    "comment_count": 130,
+    "share_count": 53,
+    "view_count": 39882,
+    "collect_count": 234,
+    "tags": [
+      "护肤",
+      "护肤推荐",
+      "护肤分享",
+      "分享",
+      "必买"
+    ],
+    "category": "护肤",
+    "images": [
+      "https://picsum.photos/400/600?random=3"
+    ],
+    "location": "重庆",
+    "is_video": true,
+    "duration": 125,
+    "engagement_rate": 15.6,
+    "quality_score": 9.449279949743122,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_护肤_4_1752830263_9794",
+    "title": "敏感肌护肤产品推荐，温和不刺激",
+    "content": "详细分享关于护肤的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "温柔的护肤小姐姐5",
+    "author_id": "user_护肤_4_33449",
+    "publish_time": "2025-07-13T15:21:43.277758",
+    "like_count": 1620,
+    "comment_count": 202,
+    "share_count": 73,
+    "view_count": 43740,
+    "collect_count": 324,
+    "tags": [
+      "护肤",
+      "护肤推荐",
+      "护肤分享",
+      "实用",
+      "必买"
+    ],
+    "category": "护肤",
+    "images": [
+      "https://picsum.photos/400/600?random=4"
+    ],
+    "location": "杭州",
+    "is_video": false,
+    "duration": 83,
+    "engagement_rate": 16.98,
+    "quality_score": 8.965023478548403,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_护肤_5_1752830263_3122",
+    "title": "护肤成分党必看，这些成分要避开",
+    "content": "详细分享关于护肤的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "爱护肤仙女6",
+    "author_id": "user_护肤_5_20846",
+    "publish_time": "2025-06-23T00:12:43.277771",
+    "like_count": 1732,
+    "comment_count": 115,
+    "share_count": 55,
+    "view_count": 57156,
+    "collect_count": 173,
+    "tags": [
+      "护肤",
+      "护肤推荐",
+      "护肤分享",
+      "分享",
+      "必买"
+    ],
+    "category": "护肤",
+    "images": [
+      "https://picsum.photos/400/600?random=5"
+    ],
+    "location": "上海",
+    "is_video": true,
+    "duration": 78,
+    "engagement_rate": 9.82,
+    "quality_score": 7.876076480700393,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_穿搭_0_1752830264_1941",
+    "title": "约会穿搭推荐，让他眼前一亮",
+    "content": "详细分享关于穿搭的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "温柔的穿搭博主1",
+    "author_id": "user_穿搭_0_70894",
+    "publish_time": "2025-06-24T23:49:44.469763",
+    "like_count": 1303,
+    "comment_count": 162,
+    "share_count": 44,
+    "view_count": 23454,
+    "collect_count": 260,
+    "tags": [
+      "穿搭",
+      "穿搭推荐",
+      "穿搭分享",
+      "必买",
+      "实用"
+    ],
+    "category": "穿搭",
+    "images": [
+      "https://picsum.photos/400/600?random=0"
+    ],
+    "location": "广州",
+    "is_video": false,
+    "duration": null,
+    "engagement_rate": 15.81,
+    "quality_score": 8.829881355227691,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_穿搭_1_1752830264_1390",
+    "title": "换季穿搭攻略，时髦过渡期",
+    "content": "详细分享关于穿搭的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "阳光穿搭仙女2",
+    "author_id": "user_穿搭_1_70764",
+    "publish_time": "2025-07-02T12:17:44.469815",
+    "like_count": 1203,
+    "comment_count": 92,
+    "share_count": 60,
+    "view_count": 33684,
+    "collect_count": 200,
+    "tags": [
+      "穿搭",
+      "穿搭推荐",
+      "穿搭分享",
+      "种草",
+      "好物"
+    ],
+    "category": "穿搭",
+    "images": [
+      "https://picsum.photos/400/600?random=1"
+    ],
+    "location": "杭州",
+    "is_video": true,
+    "duration": null,
+    "engagement_rate": 12.64,
+    "quality_score": 9.794133525731088,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_穿搭_2_1752830264_3333",
+    "title": "换季穿搭攻略，时髦过渡期",
+    "content": "详细分享关于穿搭的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "阳光穿搭达人3",
+    "author_id": "user_穿搭_2_60849",
+    "publish_time": "2025-07-14T05:34:44.469832",
+    "like_count": 1683,
+    "comment_count": 120,
+    "share_count": 45,
+    "view_count": 45441,
+    "collect_count": 240,
+    "tags": [
+      "穿搭",
+      "穿搭推荐",
+      "穿搭分享",
+      "实用",
+      "好物"
+    ],
+    "category": "穿搭",
+    "images": [
+      "https://picsum.photos/400/600?random=2"
+    ],
+    "location": "深圳",
+    "is_video": false,
+    "duration": null,
+    "engagement_rate": 9.8,
+    "quality_score": 8.52576829666942,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_穿搭_3_1752830264_6460",
+    "title": "换季穿搭攻略，时髦过渡期",
+    "content": "详细分享关于穿搭的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "阳光穿搭博主4",
+    "author_id": "user_穿搭_3_78643",
+    "publish_time": "2025-06-21T17:40:44.469849",
+    "like_count": 1228,
+    "comment_count": 87,
+    "share_count": 47,
+    "view_count": 29472,
+    "collect_count": 136,
+    "tags": [
+      "穿搭",
+      "穿搭推荐",
+      "穿搭分享",
+      "种草",
+      "实用"
+    ],
+    "category": "穿搭",
+    "images": [
+      "https://picsum.photos/400/600?random=3"
+    ],
+    "location": "杭州",
+    "is_video": true,
+    "duration": null,
+    "engagement_rate": 10.91,
+    "quality_score": 7.602063905050725,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_穿搭_4_1752830264_5238",
+    "title": "职场穿搭搭配，优雅又专业",
+    "content": "详细分享关于穿搭的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "阳光穿搭宝贝5",
+    "author_id": "user_穿搭_4_15425",
+    "publish_time": "2025-06-28T10:15:44.469860",
+    "like_count": 937,
+    "comment_count": 62,
+    "share_count": 26,
+    "view_count": 19677,
+    "collect_count": 133,
+    "tags": [
+      "穿搭",
+      "穿搭推荐",
+      "穿搭分享",
+      "实用",
+      "推荐"
+    ],
+    "category": "穿搭",
+    "images": [
+      "https://picsum.photos/400/600?random=4"
+    ],
+    "location": "重庆",
+    "is_video": true,
+    "duration": null,
+    "engagement_rate": 9.39,
+    "quality_score": 8.217527623683145,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_穿搭_5_1752830264_7812",
+    "title": "学生党穿搭分享，好看不贵",
+    "content": "详细分享关于穿搭的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "可爱的穿搭小姐姐6",
+    "author_id": "user_穿搭_5_39895",
+    "publish_time": "2025-06-21T03:58:44.469872",
+    "like_count": 1353,
+    "comment_count": 150,
+    "share_count": 39,
+    "view_count": 29766,
+    "collect_count": 150,
+    "tags": [
+      "穿搭",
+      "穿搭推荐",
+      "穿搭分享",
+      "必买",
+      "好物"
+    ],
+    "category": "穿搭",
+    "images": [
+      "https://picsum.photos/400/600?random=5"
+    ],
+    "location": "深圳",
+    "is_video": true,
+    "duration": null,
+    "engagement_rate": 13.97,
+    "quality_score": 9.084507081755541,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_美食_0_1752830265_8215",
+    "title": "探店美食分享，这家真的绝了",
+    "content": "详细分享关于美食的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "小美食小姐姐1",
+    "author_id": "user_美食_0_96028",
+    "publish_time": "2025-07-18T08:10:45.182757",
+    "like_count": 2418,
+    "comment_count": 302,
+    "share_count": 62,
+    "view_count": 41106,
+    "collect_count": 268,
+    "tags": [
+      "美食",
+      "美食推荐",
+      "美食分享",
+      "必买",
+      "分享"
+    ],
+    "category": "美食",
+    "images": [
+      "https://picsum.photos/400/600?random=0"
+    ],
+    "location": "成都",
+    "is_video": true,
+    "duration": 102,
+    "engagement_rate": 15.05,
+    "quality_score": 8.200935093298575,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_美食_1_1752830265_6142",
+    "title": "超简单美食制作，新手也能成功",
+    "content": "详细分享关于美食的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "甜美食博主2",
+    "author_id": "user_美食_1_48140",
+    "publish_time": "2025-07-13T01:53:45.182810",
+    "like_count": 823,
+    "comment_count": 74,
+    "share_count": 30,
+    "view_count": 20575,
+    "collect_count": 117,
+    "tags": [
+      "美食",
+      "美食推荐",
+      "美食分享",
+      "分享",
+      "推荐"
+    ],
+    "category": "美食",
+    "images": [
+      "https://picsum.photos/400/600?random=1"
+    ],
+    "location": "北京",
+    "is_video": false,
+    "duration": 16,
+    "engagement_rate": 12.64,
+    "quality_score": 8.223503851442086,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_美食_2_1752830265_3577",
+    "title": "家常美食做法，妈妈的味道",
+    "content": "详细分享关于美食的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "可爱的美食仙女3",
+    "author_id": "user_美食_2_53321",
+    "publish_time": "2025-06-23T04:40:45.182839",
+    "like_count": 2420,
+    "comment_count": 302,
+    "share_count": 115,
+    "view_count": 55660,
+    "collect_count": 268,
+    "tags": [
+      "美食",
+      "美食推荐",
+      "美食分享",
+      "推荐",
+      "种草"
+    ],
+    "category": "美食",
+    "images": [
+      "https://picsum.photos/400/600?random=2"
+    ],
+    "location": "北京",
+    "is_video": true,
+    "duration": 15,
+    "engagement_rate": 17.23,
+    "quality_score": 9.781434926980342,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_美食_3_1752830265_8452",
+    "title": "减脂美食推荐，好吃不长胖",
+    "content": "详细分享关于美食的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "爱美食达人4",
+    "author_id": "user_美食_3_21105",
+    "publish_time": "2025-07-12T07:13:45.182853",
+    "like_count": 1483,
+    "comment_count": 105,
+    "share_count": 44,
+    "view_count": 43007,
+    "collect_count": 247,
+    "tags": [
+      "美食",
+      "美食推荐",
+      "美食分享",
+      "实用",
+      "好物"
+    ],
+    "category": "美食",
+    "images": [
+      "https://picsum.photos/400/600?random=3"
+    ],
+    "location": "深圳",
+    "is_video": false,
+    "duration": null,
+    "engagement_rate": 10.05,
+    "quality_score": 9.185643824670336,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_美食_4_1752830265_3683",
+    "title": "网红美食测评，到底值不值得排队",
+    "content": "详细分享关于美食的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "美美食达人5",
+    "author_id": "user_美食_4_63667",
+    "publish_time": "2025-06-28T22:05:45.182865",
+    "like_count": 1140,
+    "comment_count": 114,
+    "share_count": 39,
+    "view_count": 33060,
+    "collect_count": 162,
+    "tags": [
+      "美食",
+      "美食推荐",
+      "美食分享",
+      "种草",
+      "实用"
+    ],
+    "category": "美食",
+    "images": [
+      "https://picsum.photos/400/600?random=4"
+    ],
+    "location": "深圳",
+    "is_video": true,
+    "duration": null,
+    "engagement_rate": 13.42,
+    "quality_score": 8.614086917388043,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_美食_5_1752830265_9957",
+    "title": "探店美食分享，这家真的绝了",
+    "content": "详细分享关于美食的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "爱美食仙女6",
+    "author_id": "user_美食_5_66764",
+    "publish_time": "2025-07-15T08:54:45.182881",
+    "like_count": 95,
+    "comment_count": 11,
+    "share_count": 3,
+    "view_count": 3040,
+    "collect_count": 19,
+    "tags": [
+      "美食",
+      "美食推荐",
+      "美食分享",
+      "实用",
+      "好物"
+    ],
+    "category": "美食",
+    "images": [
+      "https://picsum.photos/400/600?random=5"
+    ],
+    "location": "上海",
+    "is_video": false,
+    "duration": null,
+    "engagement_rate": 14.74,
+    "quality_score": 8.444914102665871,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_旅行_0_1752830266_5495",
+    "title": "旅行种草 - 这个真的太好用了",
+    "content": "详细分享关于旅行的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "阳光旅行仙女1",
+    "author_id": "user_旅行_0_98115",
+    "publish_time": "2025-06-20T03:34:46.657262",
+    "like_count": 504,
+    "comment_count": 38,
+    "share_count": 12,
+    "view_count": 10080,
+    "collect_count": 56,
+    "tags": [
+      "旅行",
+      "旅行推荐",
+      "旅行分享",
+      "种草",
+      "分享"
+    ],
+    "category": "旅行",
+    "images": [
+      "https://picsum.photos/400/600?random=0"
+    ],
+    "location": "北京",
+    "is_video": false,
+    "duration": 152,
+    "engagement_rate": 9.92,
+    "quality_score": 9.319369540882848,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_旅行_1_1752830266_5480",
+    "title": "旅行测评 - 详细使用感受",
+    "content": "详细分享关于旅行的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "爱旅行博主2",
+    "author_id": "user_旅行_1_31806",
+    "publish_time": "2025-06-20T06:42:46.657357",
+    "like_count": 96,
+    "comment_count": 8,
+    "share_count": 3,
+    "view_count": 3072,
+    "collect_count": 10,
+    "tags": [
+      "旅行",
+      "旅行推荐",
+      "旅行分享",
+      "种草",
+      "必买"
+    ],
+    "category": "旅行",
+    "images": [
+      "https://picsum.photos/400/600?random=1"
+    ],
+    "location": "广州",
+    "is_video": true,
+    "duration": 46,
+    "engagement_rate": 11.46,
+    "quality_score": 9.269862527968845,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_旅行_2_1752830266_9189",
+    "title": "旅行攻略 - 新手必看指南",
+    "content": "详细分享关于旅行的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "爱旅行小姐姐3",
+    "author_id": "user_旅行_2_76133",
+    "publish_time": "2025-06-18T17:52:46.657414",
+    "like_count": 547,
+    "comment_count": 60,
+    "share_count": 16,
+    "view_count": 19145,
+    "collect_count": 78,
+    "tags": [
+      "旅行",
+      "旅行推荐",
+      "旅行分享",
+      "分享",
+      "推荐"
+    ],
+    "category": "旅行",
+    "images": [
+      "https://picsum.photos/400/600?random=2"
+    ],
+    "location": "北京",
+    "is_video": true,
+    "duration": null,
+    "engagement_rate": 13.89,
+    "quality_score": 8.675909184829711,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_旅行_3_1752830266_7220",
+    "title": "旅行攻略 - 新手必看指南",
+    "content": "详细分享关于旅行的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "美旅行分享家4",
+    "author_id": "user_旅行_3_53125",
+    "publish_time": "2025-06-18T03:33:46.657441",
+    "like_count": 1497,
+    "comment_count": 99,
+    "share_count": 38,
+    "view_count": 32934,
+    "collect_count": 149,
+    "tags": [
+      "旅行",
+      "旅行推荐",
+      "旅行分享",
+      "必买",
+      "种草"
+    ],
+    "category": "旅行",
+    "images": [
+      "https://picsum.photos/400/600?random=3"
+    ],
+    "location": "北京",
+    "is_video": false,
+    "duration": null,
+    "engagement_rate": 9.15,
+    "quality_score": 7.68899307695697,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_旅行_4_1752830266_9464",
+    "title": "旅行测评 - 详细使用感受",
+    "content": "详细分享关于旅行的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "阳光旅行博主5",
+    "author_id": "user_旅行_4_30516",
+    "publish_time": "2025-07-18T12:47:46.657455",
+    "like_count": 1282,
+    "comment_count": 85,
+    "share_count": 44,
+    "view_count": 25640,
+    "collect_count": 160,
+    "tags": [
+      "旅行",
+      "旅行推荐",
+      "旅行分享",
+      "推荐",
+      "种草"
+    ],
+    "category": "旅行",
+    "images": [
+      "https://picsum.photos/400/600?random=4"
+    ],
+    "location": "广州",
+    "is_video": true,
+    "duration": 40,
+    "engagement_rate": 10.06,
+    "quality_score": 8.264918546602589,
+    "data_source": "simulated_realistic"
+  },
+  {
+    "id": "note_旅行_5_1752830266_1178",
+    "title": "旅行攻略 - 新手必看指南",
+    "content": "详细分享关于旅行的使用心得和体验，包含选购建议、使用技巧等实用信息...",
+    "author": "美旅行小姐姐6",
+    "author_id": "user_旅行_5_31517",
+    "publish_time": "2025-07-04T13:00:46.657469",
+    "like_count": 403,
+    "comment_count": 50,
+    "share_count": 13,
+    "view_count": 9269,
+    "collect_count": 57,
+    "tags": [
+      "旅行",
+      "旅行推荐",
+      "旅行分享",
+      "好物",
+      "必买"
+    ],
+    "category": "旅行",
+    "images": [
+      "https://picsum.photos/400/600?random=5"
+    ],
+    "location": "成都",
+    "is_video": true,
+    "duration": null,
+    "engagement_rate": 15.63,
+    "quality_score": 8.719291612261683,
+    "data_source": "simulated_realistic"
+  }
+]

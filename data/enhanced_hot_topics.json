@@ -1,0 +1,92 @@
+[
+  {
+    "id": "topic_美妆_1752838948",
+    "title": "美妆相关话题",
+    "category": "美妆",
+    "posts": 5,
+    "heat": 100,
+    "growth": 12.634704859230144,
+    "likeCount": 6316,
+    "commentCount": 386,
+    "shareCount": 107,
+    "trendScore": 100,
+    "sample_titles": [
+      "美妆相关内容分享 - 第1期",
+      "美妆相关内容分享 - 第2期",
+      "美妆相关内容分享 - 第3期"
+    ],
+    "updated_at": "2025-07-18T19:42:28.852492"
+  },
+  {
+    "id": "topic_护肤_1752838948",
+    "title": "护肤相关话题",
+    "category": "护肤",
+    "posts": 5,
+    "heat": 100,
+    "growth": 7.676372050753482,
+    "likeCount": 4919,
+    "commentCount": 657,
+    "shareCount": 165,
+    "trendScore": 100,
+    "sample_titles": [
+      "护肤相关内容分享 - 第1期",
+      "护肤相关内容分享 - 第2期",
+      "护肤相关内容分享 - 第3期"
+    ],
+    "updated_at": "2025-07-18T19:42:28.852504"
+  },
+  {
+    "id": "topic_穿搭_1752838948",
+    "title": "穿搭相关话题",
+    "category": "穿搭",
+    "posts": 5,
+    "heat": 100,
+    "growth": 5.788205360519655,
+    "likeCount": 7024,
+    "commentCount": 616,
+    "shareCount": 154,
+    "trendScore": 100,
+    "sample_titles": [
+      "穿搭相关内容分享 - 第1期",
+      "穿搭相关内容分享 - 第2期",
+      "穿搭相关内容分享 - 第3期"
+    ],
+    "updated_at": "2025-07-18T19:42:28.852508"
+  },
+  {
+    "id": "topic_美食_1752838948",
+    "title": "美食相关话题",
+    "category": "美食",
+    "posts": 5,
+    "heat": 100,
+    "growth": 14.924439172122096,
+    "likeCount": 4947,
+    "commentCount": 706,
+    "shareCount": 236,
+    "trendScore": 100,
+    "sample_titles": [
+      "美食相关内容分享 - 第1期",
+      "美食相关内容分享 - 第2期",
+      "美食相关内容分享 - 第3期"
+    ],
+    "updated_at": "2025-07-18T19:42:28.852510"
+  },
+  {
+    "id": "topic_旅行_1752838948",
+    "title": "旅行相关话题",
+    "category": "旅行",
+    "posts": 5,
+    "heat": 100,
+    "growth": 12.433407786470077,
+    "likeCount": 5798,
+    "commentCount": 373,
+    "shareCount": 178,
+    "trendScore": 100,
+    "sample_titles": [
+      "旅行相关内容分享 - 第1期",
+      "旅行相关内容分享 - 第2期",
+      "旅行相关内容分享 - 第3期"
+    ],
+    "updated_at": "2025-07-18T19:42:28.852512"
+  }
+]

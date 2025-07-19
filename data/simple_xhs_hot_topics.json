@@ -1,0 +1,112 @@
+[
+  {
+    "id": "topic_美妆_1752830268",
+    "title": "#美妆#",
+    "description": "关于美妆的热门话题讨论",
+    "category": "美妆",
+    "posts": 35611,
+    "heat": 87.66537204616526,
+    "growth": 21.810487280464116,
+    "participants": 6887,
+    "total_likes": 3626347,
+    "total_comments": 970024,
+    "total_shares": 136198,
+    "trend_score": 83.4936894164669,
+    "trending_rank": 1,
+    "created_time": "2025-07-18T17:17:48.058358",
+    "updated_time": "2025-07-18T17:17:48.058366",
+    "related_keywords": [
+      "美妆",
+      "种草",
+      "必买"
+    ]
+  },
+  {
+    "id": "topic_护肤_1752830268",
+    "title": "#护肤#",
+    "description": "关于护肤的热门话题讨论",
+    "category": "护肤",
+    "posts": 25586,
+    "heat": 85.97261516850452,
+    "growth": 16.319202551000302,
+    "participants": 4143,
+    "total_likes": 3924101,
+    "total_comments": 499563,
+    "total_shares": 225179,
+    "trend_score": 84.79500326169,
+    "trending_rank": 2,
+    "created_time": "2025-07-18T17:17:48.058390",
+    "updated_time": "2025-07-18T17:17:48.058392",
+    "related_keywords": [
+      "护肤",
+      "种草",
+      "分享"
+    ]
+  },
+  {
+    "id": "topic_穿搭_1752830268",
+    "title": "#穿搭#",
+    "description": "关于穿搭的热门话题讨论",
+    "category": "穿搭",
+    "posts": 16703,
+    "heat": 72.35712021088949,
+    "growth": 0.172833050754285,
+    "participants": 3146,
+    "total_likes": 2742738,
+    "total_comments": 265462,
+    "total_shares": 44327,
+    "trend_score": 67.62040941714412,
+    "trending_rank": 3,
+    "created_time": "2025-07-18T17:17:48.058402",
+    "updated_time": "2025-07-18T17:17:48.058403",
+    "related_keywords": [
+      "穿搭",
+      "推荐",
+      "必买"
+    ]
+  },
+  {
+    "id": "topic_美食_1752830268",
+    "title": "#美食#",
+    "description": "关于美食的热门话题讨论",
+    "category": "美食",
+    "posts": 30092,
+    "heat": 86.19421192122813,
+    "growth": 4.2705567885275215,
+    "participants": 4873,
+    "total_likes": 1993151,
+    "total_comments": 367014,
+    "total_shares": 232732,
+    "trend_score": 89.4608323066046,
+    "trending_rank": 4,
+    "created_time": "2025-07-18T17:17:48.058411",
+    "updated_time": "2025-07-18T17:17:48.058412",
+    "related_keywords": [
+      "美食",
+      "必买",
+      "好物"
+    ]
+  },
+  {
+    "id": "topic_旅行_1752830268",
+    "title": "#旅行#",
+    "description": "关于旅行的热门话题讨论",
+    "category": "旅行",
+    "posts": 25332,
+    "heat": 71.17792448402948,
+    "growth": 14.586827272135942,
+    "participants": 3840,
+    "total_likes": 4531833,
+    "total_comments": 455999,
+    "total_shares": 169114,
+    "trend_score": 73.83804342568568,
+    "trending_rank": 5,
+    "created_time": "2025-07-18T17:17:48.058420",
+    "updated_time": "2025-07-18T17:17:48.058421",
+    "related_keywords": [
+      "旅行",
+      "好物",
+      "种草"
+    ]
+  }
+]

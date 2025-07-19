@@ -1,0 +1,45 @@
+services:
+  # MySQL数据库
+  mysql:
+    image: mysql:8.0
+    container_name: xhs_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: xhs123456
+      MYSQL_DATABASE: xiaohongshu_data
+      MYSQL_USER: xhs_user
+      MYSQL_PASSWORD: xhs123456
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: unless-stopped
+
+  # Redis缓存
+  redis:
+    image: redis:7-alpine
+    container_name: xhs_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  # phpMyAdmin数据库管理
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: xhs_phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: xhs_user
+      PMA_PASSWORD: xhs123456
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
+  redis_data:

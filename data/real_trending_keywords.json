@@ -1,0 +1,62 @@
+[
+  {
+    "keyword": "冬季穿搭",
+    "heat": 95,
+    "trend": "up",
+    "change": "+12%"
+  },
+  {
+    "keyword": "护肤",
+    "heat": 88,
+    "trend": "up",
+    "change": "+8%"
+  },
+  {
+    "keyword": "美妆教程",
+    "heat": 82,
+    "trend": "stable",
+    "change": "+2%"
+  },
+  {
+    "keyword": "减肥",
+    "heat": 76,
+    "trend": "down",
+    "change": "-3%"
+  },
+  {
+    "keyword": "旅行攻略",
+    "heat": 71,
+    "trend": "up",
+    "change": "+15%"
+  },
+  {
+    "keyword": "美食",
+    "heat": 69,
+    "trend": "stable",
+    "change": "+1%"
+  },
+  {
+    "keyword": "健身",
+    "heat": 65,
+    "trend": "up",
+    "change": "+6%"
+  },
+  {
+    "keyword": "数码测评",
+    "heat": 58,
+    "trend": "down",
+    "change": "-5%"
+  },
+  {
+    "keyword": "家居装修",
+    "heat": 54,
+    "trend": "up",
+    "change": "+9%"
+  },
+  {
+    "keyword": "宠物",
+    "heat": 48,
+    "trend": "stable",
+    "change": "+3%"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "美妆": {
+    "count": 5,
+    "avg_likes": 1263.2,
+    "avg_comments": 77.2,
+    "sentiment_distribution": {
+      "positive": 0,
+      "neutral": 2,
+      "negative": 3
+    }
+  },
+  "护肤": {
+    "count": 5,
+    "avg_likes": 983.8,
+    "avg_comments": 131.4,
+    "sentiment_distribution": {
+      "positive": 1,
+      "neutral": 4,
+      "negative": 0
+    }
+  },
+  "穿搭": {
+    "count": 5,
+    "avg_likes": 1404.8,
+    "avg_comments": 123.2,
+    "sentiment_distribution": {
+      "positive": 3,
+      "neutral": 1,
+      "negative": 1
+    }
+  },
+  "美食": {
+    "count": 5,
+    "avg_likes": 989.4,
+    "avg_comments": 141.2,
+    "sentiment_distribution": {
+      "positive": 2,
+      "neutral": 2,
+      "negative": 1
+    }
+  },
+  "旅行": {
+    "count": 5,
+    "avg_likes": 1159.6,
+    "avg_comments": 74.6,
+    "sentiment_distribution": {
+      "positive": 1,
+      "neutral": 1,
+      "negative": 3
+    }
+  }
+}
