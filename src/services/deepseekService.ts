@@ -10,17 +10,26 @@ const getEnvVar = (key: string): string | undefined => {
   return process?.env?.[key];
 };
 
-// DeepSeek API 配置
-const deepseek = new OpenAI({
-  baseURL: getEnvVar('REACT_APP_DEEPSEEK_BASE_URL') || 'https://api.deepseek.com',
-  apiKey: getEnvVar('REACT_APP_DEEPSEEK_API_KEY'),
-  dangerouslyAllowBrowser: true, // 允许在浏览器中使用
-});
+// DeepSeek API 配置 - 延迟初始化
+let deepseek: OpenAI | null = null;
 
-// 检查API密钥是否配置
-if (!getEnvVar('REACT_APP_DEEPSEEK_API_KEY')) {
-  console.warn('⚠️ DeepSeek API密钥未配置，请检查.env.local文件');
-}
+// 获取或创建DeepSeek客户端实例
+const getDeepSeekClient = (): OpenAI | null => {
+  if (!deepseek) {
+    const apiKey = getEnvVar('REACT_APP_DEEPSEEK_API_KEY');
+    if (!apiKey) {
+      console.warn('⚠️ DeepSeek API密钥未配置，请检查.env.local文件');
+      return null;
+    }
+
+    deepseek = new OpenAI({
+      baseURL: getEnvVar('REACT_APP_DEEPSEEK_BASE_URL') || 'https://api.deepseek.com',
+      apiKey: apiKey,
+      dangerouslyAllowBrowser: true, // 允许在浏览器中使用
+    });
+  }
+  return deepseek;
+};
 
 // 成本监控
 let totalTokensUsed = 0;
@@ -70,8 +79,12 @@ export const generateTitles = async (
     if (typeof window !== 'undefined') {
       try {
         console.log('🌐 浏览器环境：尝试DeepSeek API调用');
+        const client = getDeepSeekClient();
+        if (!client) {
+          throw new Error('DeepSeek客户端未配置');
+        }
         // 尝试实际API调用
-        const response = await deepseek.chat.completions.create({
+        const response = await client.chat.completions.create({
           model: 'deepseek-chat',
           messages: [
             { role: 'system', content: systemPrompt },
@@ -123,7 +136,12 @@ export const generateTitles = async (
 
     const userPrompt = `请为"${topic}"主题生成${count}个小红书标题，要求新颖、有趣、能引起用户点击欲望。`;
 
-    const response = await deepseek.chat.completions.create({
+    const client = getDeepSeekClient();
+    if (!client) {
+      throw new Error('DeepSeek客户端未配置');
+    }
+
+    const response = await client.chat.completions.create({
       model: 'deepseek-chat',
       messages: [
         { role: 'system', content: systemPrompt },
@@ -192,8 +210,12 @@ export const generateContentIdeas = async (
         const timeoutId = setTimeout(() => controller.abort(), 8000); // 8秒超时，优先保证API成功
 
         try {
+          const client = getDeepSeekClient();
+          if (!client) {
+            throw new Error('DeepSeek客户端未配置');
+          }
           // 尝试实际API调用
-          const response = await deepseek.chat.completions.create({
+          const response = await client.chat.completions.create({
             model: 'deepseek-chat',
             messages: [
               { role: 'system', content: systemPrompt },
@@ -249,7 +271,12 @@ export const generateContentIdeas = async (
       }
     }
 
-    const response = await deepseek.chat.completions.create({
+    const client = getDeepSeekClient();
+    if (!client) {
+      throw new Error('DeepSeek客户端未配置');
+    }
+
+    const response = await client.chat.completions.create({
       model: 'deepseek-chat',
       messages: [
         { role: 'system', content: systemPrompt },
@@ -324,7 +351,12 @@ export const analyzeTrends = async (
     const dataStr = JSON.stringify(data.slice(0, 100)); // 限制数据量避免token超限
     const userPrompt = `请分析以下小红书${analysisType}数据，提供专业的趋势分析报告：\n\n${dataStr}`;
 
-    const response = await deepseek.chat.completions.create({
+    const client = getDeepSeekClient();
+    if (!client) {
+      throw new Error('DeepSeek客户端未配置');
+    }
+
+    const response = await client.chat.completions.create({
       model: 'deepseek-chat',
       messages: [
         { role: 'system', content: systemPrompt },
@@ -368,7 +400,13 @@ export const testDeepSeekConnection = async (): Promise<boolean> => {
     }
 
     // 只有在Node.js环境中才实际调用API
-    const response = await deepseek.chat.completions.create({
+    const client = getDeepSeekClient();
+    if (!client) {
+      console.warn('❌ DeepSeek客户端初始化失败');
+      return false;
+    }
+
+    const response = await client.chat.completions.create({
       model: 'deepseek-chat',
       messages: [
         { role: 'user', content: '你好，请回复"连接成功"' }
