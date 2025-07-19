@@ -1261,65 +1261,65 @@ class SimpleDataService {
     return Math.round((summerRatio - 0.25) * 40); // 转换为-10到+10的增长趋势
   }
 
-  // 时间衰减因子
-  private getTimeDecayFactor(publishTime: string): number {
-    if (!publishTime) return 1.0;
+  // 时间衰减因子 (暂未使用)
+  // private getTimeDecayFactor(publishTime: string): number {
+  //   if (!publishTime) return 1.0;
 
-    const now = new Date();
-    const pubDate = new Date(publishTime);
-    const daysDiff = (now.getTime() - pubDate.getTime()) / (1000 * 60 * 60 * 24);
+  //   const now = new Date();
+  //   const pubDate = new Date(publishTime);
+  //   const daysDiff = (now.getTime() - pubDate.getTime()) / (1000 * 60 * 60 * 24);
 
-    // 7天内的内容权重更高
-    if (daysDiff <= 7) return 1.2;
-    if (daysDiff <= 30) return 1.0;
-    if (daysDiff <= 90) return 0.8;
-    return 0.6;
-  }
+  //   // 7天内的内容权重更高
+  //   if (daysDiff <= 7) return 1.2;
+  //   if (daysDiff <= 30) return 1.0;
+  //   if (daysDiff <= 90) return 0.8;
+  //   return 0.6;
+  // }
 
-  // 参与度质量评分
-  private getEngagementQuality(item: RealTopicData): number {
-    const commentRatio = item.commentCount / (item.likeCount + 1);
-    const shareRatio = item.shareCount / (item.likeCount + 1);
+  // 参与度质量评分 (暂未使用)
+  // private getEngagementQuality(item: RealTopicData): number {
+  //   const commentRatio = item.commentCount / (item.likeCount + 1);
+  //   const shareRatio = item.shareCount / (item.likeCount + 1);
 
-    // 评论和分享比例高的内容质量更好
-    if (commentRatio > 0.3 && shareRatio > 0.1) return 1.3;
-    if (commentRatio > 0.2 || shareRatio > 0.05) return 1.1;
-    return 1.0;
-  }
+  //   // 评论和分享比例高的内容质量更好
+  //   if (commentRatio > 0.3 && shareRatio > 0.1) return 1.3;
+  //   if (commentRatio > 0.2 || shareRatio > 0.05) return 1.1;
+  //   return 1.0;
+  // }
 
-  // 内容评分
-  private getContentScore(item: RealTopicData): number {
-    let score = 1.0;
+  // 内容评分 (暂未使用)
+  // private getContentScore(item: RealTopicData): number {
+  //   let score = 1.0;
 
-    // 标题长度评分
-    const titleLength = item.title?.length || 0;
-    if (titleLength >= 10 && titleLength <= 30) score += 0.1;
+  //   // 标题长度评分
+  //   const titleLength = item.title?.length || 0;
+  //   if (titleLength >= 10 && titleLength <= 30) score += 0.1;
 
-    // 内容长度评分
-    const contentLength = item.content?.length || 0;
-    if (contentLength >= 50 && contentLength <= 500) score += 0.1;
+  //   // 内容长度评分
+  //   const contentLength = item.content?.length || 0;
+  //   if (contentLength >= 50 && contentLength <= 500) score += 0.1;
 
-    // 标签数量评分
-    const tagCount = item.tags?.length || 0;
-    if (tagCount >= 3 && tagCount <= 8) score += 0.1;
+  //   // 标签数量评分
+  //   const tagCount = item.tags?.length || 0;
+  //   if (tagCount >= 3 && tagCount <= 8) score += 0.1;
 
-    return score;
-  }
+  //   return score;
+  // }
 
-  // 标签相关性评分
-  private getTagRelevance(item: RealTopicData): number {
-    const tags = item.tags || [];
-    const category = item.category;
+  // 标签相关性评分 (暂未使用)
+  // private getTagRelevance(item: RealTopicData): number {
+  //   const tags = item.tags || [];
+  //   const category = item.category;
 
-    // 检查标签与分类的相关性
-    const relevantTags = tags.filter(tag =>
-      tag.toLowerCase().includes(category.toLowerCase()) ||
-      category.toLowerCase().includes(tag.toLowerCase())
-    );
+  //   // 检查标签与分类的相关性
+  //   const relevantTags = tags.filter(tag =>
+  //     tag.toLowerCase().includes(category.toLowerCase()) ||
+  //     category.toLowerCase().includes(tag.toLowerCase())
+  //   );
 
-    const relevanceRatio = relevantTags.length / Math.max(tags.length, 1);
-    return 1.0 + (relevanceRatio * 0.2); // 最多增加20%权重
-  }
+  //   const relevanceRatio = relevantTags.length / Math.max(tags.length, 1);
+  //   return 1.0 + (relevanceRatio * 0.2); // 最多增加20%权重
+  // }
 
   // 评估消费能力等级
   private assessConsumptionLevel(ageGroup: string, avgLikes: number, topCategories: any[]): string {
@@ -1396,8 +1396,8 @@ class SimpleDataService {
 
   // 分析参与度模式
   private analyzeEngagementPatterns(data: RealTopicData[]): any {
-    const totalEngagement = data.reduce((sum, item) =>
-      sum + item.likeCount + item.commentCount + item.shareCount, 0);
+    // const totalEngagement = data.reduce((sum, item) =>
+    //   sum + item.likeCount + item.commentCount + item.shareCount, 0);
 
     return {
       avgLikesPerPost: Math.round(data.reduce((sum, item) => sum + item.likeCount, 0) / data.length),
@@ -1437,7 +1437,7 @@ class SimpleDataService {
   }
 
   // 生成标题建议
-  private generateTitleSuggestions(data: RealTopicData[], keyword?: string): any[] {
+  private generateTitleSuggestions(data: RealTopicData[], _keyword?: string): any[] {
     const topPosts = data
       .sort((a, b) => (b.likeCount + b.commentCount * 3) - (a.likeCount + a.commentCount * 3))
       .slice(0, 10);
@@ -1458,10 +1458,10 @@ class SimpleDataService {
     return categories[Math.floor(Math.random() * categories.length)];
   }
 
-  private getRandomActiveTime(): string {
-    const times = ['9:00-12:00', '14:00-17:00', '19:00-22:00', '22:00-24:00'];
-    return times[Math.floor(Math.random() * times.length)];
-  }
+  // private getRandomActiveTime(): string {
+  //   const times = ['9:00-12:00', '14:00-17:00', '19:00-22:00', '22:00-24:00'];
+  //   return times[Math.floor(Math.random() * times.length)];
+  // }
 
   private getPeakEngagementHour(data: RealTopicData[]): string {
     const hourMap = new Map();
@@ -1495,7 +1495,7 @@ class SimpleDataService {
       '健身运动': ['健身计划分享', '运动技巧教学', '减脂经验分享']
     };
 
-    const categoryTemplates = templates[category] || ['内容创作分享', '经验心得总结', '实用技巧教学'];
+    const categoryTemplates = (templates as any)[category] || ['内容创作分享', '经验心得总结', '实用技巧教学'];
     return categoryTemplates[Math.floor(Math.random() * categoryTemplates.length)];
   }
 

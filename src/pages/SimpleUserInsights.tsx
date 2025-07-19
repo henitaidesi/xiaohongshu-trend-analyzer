@@ -4,6 +4,7 @@ import {
   Card, Row, Col, Statistic, Progress, Table, Tag, Button,
   Space, Typography, message, Tabs, List, Avatar
 } from 'antd';
+import type { ColumnsType, TabsProps } from 'antd';
 import {
   UserOutlined, TeamOutlined, EnvironmentOutlined,
   ClockCircleOutlined, HeartOutlined, EyeOutlined,
@@ -155,7 +156,7 @@ const SimpleUserInsights: React.FC = () => {
 
 
   // 年龄群体表格列
-  const ageColumns = [
+  const ageColumns: ColumnsType<any> = [
     {
       title: '年龄段',
       dataIndex: 'ageGroup',

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import {
   Card, Row, Col, Button, Input, List, Tag, Typography, Space,
-  message, Spin, Tabs, Form, Select, Slider, Alert, Tooltip, Badge, Modal, Switch,
+  message, Tabs, Select, Tooltip, Modal,
   Statistic, Divider
 } from 'antd';
 import {
-  BulbOutlined, EditOutlined, FireOutlined, RobotOutlined,
+  BulbOutlined, EditOutlined, RobotOutlined,
   CopyOutlined, ReloadOutlined, StarOutlined, RiseOutlined,
-  TagOutlined, EyeOutlined, LikeOutlined, MessageOutlined, KeyOutlined, SettingOutlined,
+  EyeOutlined, LikeOutlined, MessageOutlined,
   BarChartOutlined
 } from '@ant-design/icons';
 import { simpleDataService } from '../services/simpleDataService';

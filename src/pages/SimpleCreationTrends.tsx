@@ -1,9 +1,10 @@
 // 简化版创作趋势页面
 import React, { useState, useEffect } from 'react';
-import { 
-  Card, Row, Col, Statistic, Progress, Table, Tag, Button, 
-  Select, Space, Typography, Tooltip, message 
+import {
+  Card, Row, Col, Statistic, Progress, Table, Tag, Button,
+  Select, Space, Typography, Tooltip, message
 } from 'antd';
+import type { ColumnsType } from 'antd/es/table';
 import {
   ClockCircleOutlined, EyeOutlined, LikeOutlined, CommentOutlined,
   ReloadOutlined, FilterOutlined, RiseOutlined, FireOutlined, SendOutlined
@@ -87,7 +88,7 @@ const SimpleCreationTrends: React.FC = () => {
   };
 
   // 表格列定义
-  const columns = [
+  const columns: ColumnsType<TrendData> = [
     {
       title: '分类',
       dataIndex: 'category',

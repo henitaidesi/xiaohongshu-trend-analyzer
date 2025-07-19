@@ -1,5 +1,5 @@
 // 话题相关类型定义
-import { BaseEntity, TrendDirection } from './common';
+import type { BaseEntity, TrendDirection } from './common';
 
 export interface Topic extends BaseEntity {
   name: string;

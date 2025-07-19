@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Row, Col, Card, Tabs, Progress, Avatar, List, Tag, Spin, Alert } from 'antd';
+import { Row, Col, Card, Tabs, Progress, Avatar, Tag, Spin, Alert } from 'antd';
+import type { TabsProps } from 'antd';
 import { UserOutlined, TeamOutlined, EnvironmentOutlined, HeartOutlined, ShoppingOutlined, TrophyOutlined, ClockCircleOutlined } from '@ant-design/icons';
 import styled from 'styled-components';
 import { realUserInsightsService, UserInsightData } from '../../services/realUserInsightsService';
 import PieChart from '../../components/charts/PieChart';
 import BarChart from '../../components/charts/BarChart';
-
-const { TabPane } = Tabs;
 
 const PageHeader = styled.div`
   margin-bottom: 24px;

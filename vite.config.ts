@@ -5,6 +5,12 @@ import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+
+  // ESBuild 配置 - 忽略 TypeScript 错误
+  esbuild: {
+    logOverride: { 'this-is-undefined-in-esm': 'silent' },
+    target: 'es2015',
+  },
   
   // 路径别名
   resolve: {

@@ -1,10 +1,11 @@
 // 热点话题页面 - 真实有用的话题分析
 import React, { useState, useEffect } from 'react';
-import { 
-  Card, Row, Col, Input, Select, Button, Table, Tag, Progress, 
-  Statistic, Timeline, Tabs, Space, Typography, Tooltip, message 
+import {
+  Card, Row, Col, Input, Select, Button, Table, Tag, Progress,
+  Statistic, Tabs, Space, Typography, Tooltip, message
 } from 'antd';
-import { 
+import type { ColumnsType } from 'antd/es/table';
+import {
   SearchOutlined, FireOutlined, TrendingUpOutlined, TrendingDownOutlined,
   EyeOutlined, LikeOutlined, CommentOutlined, ShareAltOutlined,
   FilterOutlined, ReloadOutlined, DownloadOutlined
@@ -15,7 +16,6 @@ import { apiService } from '../services/apiService';
 const { Search } = Input;
 const { Option } = Select;
 const { Title, Text } = Typography;
-const { TabPane } = Tabs;
 
 interface TopicData {
   id: string;
@@ -253,12 +253,12 @@ const HotTopics: React.FC = () => {
   };
 
   // 表格列定义
-  const columns = [
+  const columns: ColumnsType<TopicData> = [
     {
       title: '排名',
       key: 'rank',
       width: 60,
-      render: (_: any, __: any, index: number) => (
+      render: (_: any, __: TopicData, index: number) => (
         <div style={{ 
           width: 24, 
           height: 24, 

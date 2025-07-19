@@ -69,26 +69,27 @@ const TopicsPage: React.FC = () => (
   </div>
 );
 
-const TrendsPage: React.FC = () => (
-  <div style={{ padding: '24px' }}>
-    <Title level={2}>📈 创作趋势洞察</Title>
-    <p>创作趋势分析功能正在开发中...</p>
-  </div>
-);
+// 这些组件暂时未使用，但保留以备将来使用
+// const TrendsPage: React.FC = () => (
+//   <div style={{ padding: '24px' }}>
+//     <Title level={2}>📈 创作趋势洞察</Title>
+//     <p>创作趋势分析功能正在开发中...</p>
+//   </div>
+// );
 
-const InsightsPage: React.FC = () => (
-  <div style={{ padding: '24px' }}>
-    <Title level={2}>👥 用户洞察分析</Title>
-    <p>用户洞察分析功能正在开发中...</p>
-  </div>
-);
+// const InsightsPage: React.FC = () => (
+//   <div style={{ padding: '24px' }}>
+//     <Title level={2}>👥 用户洞察分析</Title>
+//     <p>用户洞察分析功能正在开发中...</p>
+//   </div>
+// );
 
-const AssistantPage: React.FC = () => (
-  <div style={{ padding: '24px' }}>
-    <Title level={2}>🤖 AI创作助手</Title>
-    <p>AI创作助手功能正在开发中...</p>
-  </div>
-);
+// const AssistantPage: React.FC = () => (
+//   <div style={{ padding: '24px' }}>
+//     <Title level={2}>🤖 AI创作助手</Title>
+//     <p>AI创作助手功能正在开发中...</p>
+//   </div>
+// );
 
 const App: React.FC = () => {
   return (

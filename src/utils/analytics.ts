@@ -1,5 +1,5 @@
 // 真实数据分析算法模块
-import { RealTopicData, UserBehaviorData, TrendAnalysis } from '../services/dataService';
+import type { RealTopicData, UserBehaviorData, TrendAnalysis } from '../services/dataService';
 
 // 数据分析结果接口
 export interface AnalyticsResult {

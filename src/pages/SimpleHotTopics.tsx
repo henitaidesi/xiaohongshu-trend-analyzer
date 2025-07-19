@@ -1,6 +1,7 @@
 // 增强版热点话题页面 - 包含深度分析功能
 import React, { useState, useEffect } from 'react';
 import { Card, Table, Tag, Button, message, Tabs, Row, Col, Typography, Space, Statistic } from 'antd';
+import type { ColumnsType, TabsProps } from 'antd';
 import { FireOutlined, ReloadOutlined, TrophyOutlined, RiseOutlined, ClockCircleOutlined, TagsOutlined, EyeOutlined, HeartOutlined, MessageOutlined, ShareAltOutlined } from '@ant-design/icons';
 import { simpleDataService } from '../services/simpleDataService';
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
@@ -16,7 +17,6 @@ interface TopicData {
 }
 
 const { Title, Text } = Typography;
-const { TabPane } = Tabs;
 
 const SimpleHotTopics: React.FC = () => {
   const [loading, setLoading] = useState(false);
@@ -189,12 +189,12 @@ const SimpleHotTopics: React.FC = () => {
   };
 
   // 表格列定义
-  const columns = [
+  const columns: ColumnsType<TopicData> = [
     {
       title: '排名',
       key: 'rank',
       width: 80,
-      render: (_: any, __: any, index: number) => (
+      render: (_: any, __: TopicData, index: number) => (
         <div style={{ 
           width: 30, 
           height: 30, 

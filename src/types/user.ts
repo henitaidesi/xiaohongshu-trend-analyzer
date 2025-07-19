@@ -1,5 +1,5 @@
 // 用户相关类型定义
-import { BaseEntity } from './common';
+import type { BaseEntity } from './common';
 
 export interface User extends BaseEntity {
   ageGroup: string;

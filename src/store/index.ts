@@ -1,9 +1,9 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
-import { Topic, TopicFilter } from '../types/topic';
-import { Content, ContentFilter } from '../types/content';
-import { UserSegment } from '../types/user';
-import { LoadingState } from '../types/common';
+import type { Topic, TopicFilter } from '../types/topic';
+import type { Content, ContentFilter } from '../types/content';
+import type { UserSegment } from '../types/user';
+import type { LoadingState } from '../types/common';
 
 // 主数据存储
 interface DataStore {
@@ -170,7 +170,7 @@ interface UserStore {
 
 export const useUserStore = create<UserStore>()(
   devtools(
-    (set, get) => ({
+    (set) => ({
       // 初始状态
       preferences: {
         defaultTimeRange: '7d',

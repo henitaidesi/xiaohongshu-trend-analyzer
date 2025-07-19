@@ -1,7 +1,7 @@
 // 通用工具函数
 
 import dayjs from 'dayjs';
-import { TrendDirection } from '../types/common';
+import type { TrendDirection } from '../types/common';
 
 /**
  * 格式化数字显示

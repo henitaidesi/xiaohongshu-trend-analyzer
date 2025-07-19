@@ -1,5 +1,5 @@
 // 内容相关类型定义
-import { BaseEntity } from './common';
+import type { BaseEntity } from './common';
 
 export type ContentType = 'image' | 'video' | 'text' | 'live';
 

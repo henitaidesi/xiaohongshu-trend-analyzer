@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  Card, Row, Col, Statistic, Progress, Tag, Timeline, Alert, 
-  Button, Spin, message, Input, Rate, Badge, Tooltip 
+import React, { useState } from 'react';
+import {
+  Card, Row, Col, Statistic, Progress, Tag, Timeline,
+  Button, Spin, message, Input, Rate, Badge
 } from 'antd';
-import { 
-  BulbOutlined, TrendingUpOutlined, TrendingDownOutlined,
+import {
+  BulbOutlined, ArrowUpOutlined, ArrowDownOutlined,
   SmileOutlined, FrownOutlined, MehOutlined, RobotOutlined,
-  ThunderboltOutlined, EyeOutlined, HeartOutlined, MessageOutlined
+  ThunderboltOutlined, EyeOutlined, HeartOutlined
 } from '@ant-design/icons';
 
 const { TextArea } = Input;
@@ -17,10 +17,9 @@ interface AIInsightsProps {
   onAnalyze?: (text: string) => void;
 }
 
-const AIInsights: React.FC<AIInsightsProps> = ({ 
-  data, 
-  loading = false, 
-  onAnalyze 
+const AIInsights: React.FC<AIInsightsProps> = ({
+  data,
+  loading = false
 }) => {
   const [sentimentText, setSentimentText] = useState('');
   const [analyzing, setAnalyzing] = useState(false);
@@ -353,7 +352,7 @@ const AIInsights: React.FC<AIInsightsProps> = ({
                   <div style={{ marginTop: '8px' }}>
                     <span style={{ fontSize: '12px', color: '#52c41a' }}>正面词汇：</span>
                     {sentimentResult.keywords.positive.map((word: string, index: number) => (
-                      <Tag key={index} color="green" size="small" style={{ margin: '2px' }}>
+                      <Tag key={index} color="green" style={{ margin: '2px', fontSize: '12px' }}>
                         {word}
                       </Tag>
                     ))}
@@ -364,7 +363,7 @@ const AIInsights: React.FC<AIInsightsProps> = ({
                   <div style={{ marginTop: '8px' }}>
                     <span style={{ fontSize: '12px', color: '#ff4d4f' }}>负面词汇：</span>
                     {sentimentResult.keywords.negative.map((word: string, index: number) => (
-                      <Tag key={index} color="red" size="small" style={{ margin: '2px' }}>
+                      <Tag key={index} color="red" style={{ margin: '2px', fontSize: '12px' }}>
                         {word}
                       </Tag>
                     ))}
