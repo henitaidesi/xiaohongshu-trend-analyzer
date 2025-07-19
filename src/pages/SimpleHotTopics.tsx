@@ -305,8 +305,14 @@ const SimpleHotTopics: React.FC = () => {
       </Row>
 
       {/* 分析标签页 */}
-      <Tabs defaultActiveKey="list" size="large">
-        <TabPane tab="📊 话题列表" key="list">
+      <Tabs
+        defaultActiveKey="list"
+        size="large"
+        items={[
+          {
+            key: 'list',
+            label: '📊 话题列表',
+            children: (
           <Card
             extra={
               <Button
@@ -332,9 +338,12 @@ const SimpleHotTopics: React.FC = () => {
               }}
             />
           </Card>
-        </TabPane>
-
-        <TabPane tab="📈 分类分析" key="category">
+            )
+          },
+          {
+            key: 'category',
+            label: '📈 分类分析',
+            children: (
           <Row gutter={[16, 16]}>
             <Col xs={24} lg={12}>
               <Card title="分类分布饼图">
@@ -374,9 +383,12 @@ const SimpleHotTopics: React.FC = () => {
               </Card>
             </Col>
           </Row>
-        </TabPane>
-
-        <TabPane tab="🔥 关键词云" key="keywords">
+            )
+          },
+          {
+            key: 'keywords',
+            label: '🔥 关键词云',
+            children: (
           <Row gutter={[16, 16]}>
             <Col xs={24} lg={10}>
               <Card title="热门关键词分布" style={{ height: '450px' }}>
@@ -518,9 +530,12 @@ const SimpleHotTopics: React.FC = () => {
               </Card>
             </Col>
           </Row>
-        </TabPane>
-
-        <TabPane tab="⏰ 时间分析" key="time">
+            )
+          },
+          {
+            key: 'time',
+            label: '⏰ 时间分析',
+            children: (
           <Row gutter={[16, 16]}>
             <Col xs={24} lg={12}>
               <Card title="发布时间分布" style={{ height: '450px' }}>
@@ -568,8 +583,10 @@ const SimpleHotTopics: React.FC = () => {
               </Card>
             </Col>
           </Row>
-        </TabPane>
-      </Tabs>
+            )
+          }
+        ]}
+      />
     </div>
   );
 };
